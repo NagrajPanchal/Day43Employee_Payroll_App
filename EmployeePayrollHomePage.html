@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="..\Day45Employee_Payroll_Home_Page\EmployeePayrollHomePage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>Employee Payroll App</title>
+    <link rel="icon" href="..\Day45Employee_Payroll_Home_Page\assets\logo\BL_logo_square_jpg.jpg">
+</head>
+<body>
+    <header class="header-content">
+        <div class="logo-content">
+            <img class="logo-content-img" src="C:\Users\user\Desktop\bridgelabz\JavaScript\Day45Employee_Payroll_Home_Page\assets\images\logo.png" alt = "">
+            <div>
+                <span class="emp-text">EMPLOYEE</span><br>
+                <span class="emp-text emp-payroll">PAYROLL</span>
+            </div>
+        </div>
+    </header>
+    <div class="main-content">
+        <div class="header-content">
+            <div class="emp-detail-text">
+                Employee Details <div class="emp-count">11</div>
+            </div>
+            <a href="Employee_Payroll_App.html" class="add-button">
+                <img src="../Day45Employee_Payroll_Home_Page\assets\icons\attach_file-24px.svg" alt="">Add User
+            </a>
+        </div> <!--header-content-->
+    </div>
+    <div class="table-main">
+        <table id="display" class="table">
+            <tr>
+                <th></th>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Department</th>
+                <th>Salary</th>
+                <th>Start Date</th>
+                <th>Actions</th>
+            </tr>
+            <tr>
+                <td><img class="profile" alt="" src="..\Day45Employee_Payroll_Home_Page\assets\profile-images\My-new-pic.png"></td>
+                <td>Nagraj Panchal</td>
+                <td>Male</td>
+                <td><div class='dept=label'>HR</div>
+                        <div class='dept-label'>Finance</div></td>
+                <td>3000000</td>
+                <td>1 Nov 2020</td>
+                <td>
+                    <img id="1" onclick="remove(this)" alt="delete"
+                    src="..\Day45Employee_Payroll_Home_Page\assets\icons\delete-black-18dp.svg">
+                    <img id="1" alt="edit" onclick="update(this)"
+                    src="..\Day45Employee_Payroll_Home_Page\assets\icons\create-black-18dp.svg">
+                </td>    
+            </tr>
+        </table>
+    </div><!--table-main-->
+</div><!--main-content-->
+</body>
+</html>
